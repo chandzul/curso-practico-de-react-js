@@ -23,11 +23,15 @@
 <FOOTER>
 ```
 
-## Instalar un fakeApi de un archivo .json
+## Instalar FakeAPI de un archivo .json
 
 Para instalar este paquete la terminal debe tener permisos de administrador
 
 `sudo npm install json-server -g`
+
+inicializar 
+
+`json-server initialState.json`
 
 ## React Hooks desde la version > 16.8
 

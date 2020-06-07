@@ -5,9 +5,9 @@ import playIcon from '../assets/static/play.png'
 import plusIcon from '../assets/static/plus.png'
 import imageBg from '../assets/static/1.jpg';
 
-const CarouselItem = ({cover, title, year, contentRating, duration}) => (
+const CarouselItem = ({cover = imageBg, title = "In the Dark", year = 2009, contentRating = "16+", duration = 164}) => (
   <div className="carousel-item">
-      <img className="carousel-item__img" src={imageBg} alt={title} />
+      <img className="carousel-item__img" src={cover} alt={title} />
       <div className="carousel-item__details">
           <div>
               <img className="carousel-item__details--img" src={playIcon} alt="Play" />
@@ -15,7 +15,7 @@ const CarouselItem = ({cover, title, year, contentRating, duration}) => (
           </div>
           <p className="carousel-item__details--title">{title}</p>
           <p className="carousel-item__details--subtitle">
-            {`${year} ${contentRating} ${duration}`}
+            {`${year} ${contentRating} ${duration} Minutos`}
           </p>
       </div>
   </div>
